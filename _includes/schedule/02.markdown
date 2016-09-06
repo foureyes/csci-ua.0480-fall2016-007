@@ -1,0 +1,23 @@
+	<td markdown="block">
+{% comment %}
+* [About Class #2](slides/02/meta.html)
+* [Review](slides/02/review.html)
+* [Node, NPM, and git](slides/03/node-npm-debug-git.html)
+* [Objects](slides/03/objects.html)
+{% endcomment %}
+
+
+
+
+
+</td>
+	<td markdown="block">
+* [{{ site.book_js }}]({{ site.book_js_link }}) <br> Chapter 4 - Data Structures: Data Structures: Objects and Arrays
+</td>
+	<td markdown="block">
+
+Due Thursday, 9/15, by 11pm
+
+* [Homework #1](homework/01.html)
+
+</td>

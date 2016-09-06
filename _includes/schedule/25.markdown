@@ -1,0 +1,17 @@
+	<td markdown="block">
+
+* [Socket IO Intro](slides/24/socketio.html) (from previous class)
+* [Deployment](homework/deploy.html)
+
+</td>
+	<td markdown="block">
+<!--
+* Chapter 
+* Chapter 
+-->
+</td>
+	<td markdown="block">
+<!--
+* [](assignments/.html)
+-->
+</td>

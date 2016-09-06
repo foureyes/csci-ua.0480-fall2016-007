@@ -1,0 +1,25 @@
+	<td markdown="block">
+{% comment %}
+* [About Class #9](slides/09/meta.html)
+{% endcomment %}
+
+* [Express Continued (from previous class)](slides/08/express.html#/23)
+* [Express Request and Response](slides/09/request-response.html)
+
+<!-- 
+* [Forms](slides/09/forms-2.markdown)
+* [](slides//.html)
+* [](slides//.html)
+-->
+</td>
+	<td markdown="block">
+<!--
+* Chapter 
+* Chapter 
+-->
+</td>
+	<td markdown="block">
+<!--
+* [](assignments/.html)
+-->
+</td>

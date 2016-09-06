@@ -1,0 +1,22 @@
+	<td markdown="block">
+{% comment %}
+* [About Class #22](slides/22/meta.html)
+{% endcomment %}
+
+* [Ajax Part 1](slides/20/ajax.html)
+
+{% comment %}
+* (from forever ago) [CSS](slides/19/css.html)
+{% endcomment %}
+</td>
+	<td markdown="block">
+<!--
+* Chapter 
+* Chapter 
+-->
+</td>
+	<td markdown="block">
+<!--
+* [](assignments/.html)
+-->
+</td>

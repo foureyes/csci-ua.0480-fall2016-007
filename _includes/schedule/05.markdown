@@ -1,0 +1,21 @@
+	<td markdown="block">
+    {% comment %}
+* [About Class #5 and indexOf, timing, toFixed](slides/05/meta.html)
+* [Higher Order Functions Continued](slides/04/higher-order-functions-continued.html#/14) 
+    {% endcomment %}
+* Previous class on higher order functions 
+* [How Does Require Work](slides/05/control-require.html)
+
+</td>
+	<td markdown="block">
+* [{{ site.book_js }}]({{ site.book_js_link }}) <br> Chapter 5 - Higher Order Functions
+</td>
+	<td markdown="block">
+In-class programming activity:
+
+* [forEach, filter, reduce](https://docs.google.com/a/nyu.edu/forms/d/1j14LMEy3KFWT9gBxlpLmUfEtr699LcQ36_DOVSD4I_4/viewform)
+
+Due Feb 16th (Tu)
+
+* [Homework #02](homework/02.html) 
+</td>

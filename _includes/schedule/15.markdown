@@ -1,0 +1,37 @@
+	<td markdown="block">
+
+* Exam Grades by Thursday
+* Homework 
+* Final Project
+* Evaluation
+* Review Databases (see class 11 and 12)
+* [in class examples to be posted on github](https://github.com/jversoza/ait-spring-16-examples)
+
+(Maybe)
+
+* [Routers, and Project/Directory Layout](slides/15/layout.html)
+* [Parameters from URLs](slides/15/params.html)
+* [Mongoose](slides/15/mongoose.html)
+* [Validation](slides/15/validation.html)
+
+{% comment %}
+* [Authentication](slides/15/auth.html)
+{% endcomment %}
+
+<!-- 
+* [](slides//.html)
+* [](slides//.html)
+-->
+</td>
+	<td markdown="block">
+<!--
+* Chapter 
+* Chapter 
+-->
+</td>
+	<td markdown="block">
+
+Due Mar 29th (Tue)
+
+* [Homework #05](homework/05.html)
+</td>

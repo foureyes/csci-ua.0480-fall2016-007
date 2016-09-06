@@ -1,0 +1,19 @@
+	<td markdown="block">
+
+* [About the Final Exam](slides/28/exams.html)
+* [Practice Questions](resources/handouts/final/final_exam_practice.pdf)
+* [Practice Questions Solutions](resources/handouts/final/final_exam_practice_solutions.pdf)
+</td>
+	<td markdown="block">
+<!--
+* Chapter 
+* Chapter 
+-->
+</td>
+	<td markdown="block">
+
+Due Sunday May 8th
+
+* [final project requirements](http://foureyes.github.io/csci-ua.0480-spring2016-010/final-project.html)
+* [grading criteria form](https://docs.google.com/a/nyu.edu/forms/d/1uOc7g28_3QrB6WoKBwVxo7pHKDos6OcUrJORWlYskCw/viewform)
+</td>

@@ -1,0 +1,18 @@
+	<td markdown="block">
+* Homework
+* We missed covering [JSON from a previous class](slides/03/objects.html#/20)
+* [Objects Revisited](slides/06/objects-prototypes.html)
+* [A Detour: Globals, Methods, and This](slides/06/globals-methods-this.html)
+* [Objects and Prototypes](slides/06/prototypes.html)
+* Maybe talk about require again from previous class?
+* [Patterns, Errors, Use Strict](slides/06/patterns-errors-strict.html)
+</td>
+	<td markdown="block">
+* [{{ site.book_js }}]({{ site.book_js_link }}) <br> Chapter 6 - The Secret Life of Objects
+* [{{ site.book_js }}]({{ site.book_js_link }}) <br> Chapter 8 - Bugs and Error Handling 
+</td>
+	<td markdown="block">
+<!--
+* [](assignments/.html)
+-->
+</td>
