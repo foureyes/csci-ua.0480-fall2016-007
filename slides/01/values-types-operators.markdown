@@ -142,7 +142,7 @@ Seems like <code>null</code> is an object (!? ... [a mistake?](http://javascript
 ### OK, seriously, stop messing around. TELL ME ABOUT THE TYPES!
 
 * Undefined - `typeof` returns `undefined`
-* Null - `typeof` returns `null` because JavaScript is _terrible_ ([or because of backwards compatibility issues with previous versions of the language](http://stackoverflow.com/questions/18808226/why-is-typeof-null-object))
+* Null - `typeof` returns `object` because JavaScript is _terrible_ ([or because of backwards compatibility issues with previous versions of the language](http://stackoverflow.com/questions/18808226/why-is-typeof-null-object))
 * Boolean - `typeof` returns `boolean`
 * String - `typeof` returns `string`
 * Number - `typeof` returns `number`
