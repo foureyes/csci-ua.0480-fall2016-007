@@ -228,7 +228,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="15"></a>
-<tr><td>15</td><td><strong>Mar 22</strong><br>Tue</td>
+<tr><td>15</td><td><strong>Oct 25</strong><br>Tue</td>
 <td markdown="block">
 
 * Authentication Review
