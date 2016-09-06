@@ -11,7 +11,7 @@ title: CSCI-UA.0480 - Homework #0
 
 Do this so I can assign you _real_ homework next class!
 
-* [Send me your github username](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLScN3qcI_P8BQl6aBbK_-OqIEwdI-qCuwfm_jIrm7IF0o-bi_Q/viewform)
+* [Send me your github username by filling out this form](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSc5nfsSm27DyBWOb-_mfCNMS0fyWxvsuX_moK6EOaruVGqWlg/viewform)
 * [Please install Node.js, K THX.](../slides/01/intro.html#/25)
 </div>
 
