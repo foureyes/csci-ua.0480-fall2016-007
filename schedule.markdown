@@ -380,7 +380,7 @@ show react basics
 <a name="26"></a>
 <tr><td>26</td><td><strong>Dec 06</strong><br>Tue</td>
 <td markdown="block">
-* Frontend JavaScript Framework Intro (React)
+* ES6?
 </td>
 <td></td><td></td><td></td>{% comment %}
 {% include schedule/26.markdown %}
@@ -391,7 +391,7 @@ show react basics
 <!-- ------------ -->
 <tr><td>27</td><td><strong>Dec 08</strong><br>Thu</td>
 <td markdown="block">
-* Frontend JavaScript Framework Continued (React)
+* Everything Together? / TBD
 </td>
 <td></td><td></td><td></td>{% comment %}
 {% include schedule/27.markdown %}
