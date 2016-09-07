@@ -25,11 +25,11 @@
 {% endcomment %}
 </td>
 	<td markdown="block">
-Due Today, 9/06 (during class / immediately after?)
+Due Today, 9/07 (during class / immediately after?)
 
 * [A Survey](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdslWAqOMlXOl-d12sO2TsJl1l70wDUIrruV3794B9E5tL7zg/viewform)
 
-Due Thursday, 9/08, before 11pm
+Due Monday, 9/12, before 11pm
 
 * [Homework #0](homework/00.html) (install node, send me your github username)
 </td>

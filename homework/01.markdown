@@ -89,7 +89,7 @@ Then go through the following steps to clone your repository and commit your fir
 1. use this [form to send me your github username](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSc5nfsSm27DyBWOb-_mfCNMS0fyWxvsuX_moK6EOaruVGqWlg/viewform)
 2. wait for a notification that states that you've been added to the class's github _organization_
 3. I'll create a repository for you 
-4. ...go to the [class github page](https://github.com/nyu-csci-ua-0480-001-fall-2016)
+4. ...go to the [class github page](https://github.com/nyu-csci-ua-0480-007-fall-2016)
 5. find the repository that starts with your NYU NetID and ends with homework01 (for example, jjv222-homework01) 
 6. on the repository's page, use the green "Clone or download" button on the right side of the screen to copy the HTTPS clone URL to __clone__ the homework. To use the commandline client (with GITHUB_REPOSITORY_URL being the url you copied from the green button):
     <pre><code data-trim contenteditable> git clone GITHUB_REPOSITORY_URL
