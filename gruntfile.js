@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		connect: {
 			server: {
 				options: {
-                    port: grunt.option('port') || 4000,
+                    port: grunt.option('port') || 4001,
 					base: '_site'
 				},
 			}
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 					'!README.md'
           		],
 				options: {
-					livereload: true,
+					livereload: false,
 				},
 				tasks: 'jekyll',
 			}

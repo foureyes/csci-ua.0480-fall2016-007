@@ -27,7 +27,7 @@
 	<td markdown="block">
 Due Today, 9/06 (during class / immediately after?)
 
-* [A Survey](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLScN3qcI_P8BQl6aBbK_-OqIEwdI-qCuwfm_jIrm7IF0o-bi_Q/viewform)
+* [A Survey](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdslWAqOMlXOl-d12sO2TsJl1l70wDUIrruV3794B9E5tL7zg/viewform)
 
 Due Thursday, 9/08, before 11pm
 

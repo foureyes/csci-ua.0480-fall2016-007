@@ -184,7 +184,7 @@ pines:~ joe$ node
 
 I'd like to get an idea of what languages / technologies everyone has had experience with. 
 
-* __please fill out__ [this survey](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLScN3qcI_P8BQl6aBbK_-OqIEwdI-qCuwfm_jIrm7IF0o-bi_Q/viewform)
+* __please fill out__ [this survey](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdslWAqOMlXOl-d12sO2TsJl1l70wDUIrruV3794B9E5tL7zg/viewform)
 * (it's also my secret way of taking attendance)
 </section>
 

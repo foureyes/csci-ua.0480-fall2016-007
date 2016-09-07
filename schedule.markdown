@@ -17,7 +17,7 @@ nav-state: schedule
 <tbody>
 
 <!-- ------------ --><a name="01"></a>
-<tr><td>1</td><td><strong>Sep 06</strong><br>Tue</td>
+<tr><td>1</td><td><strong>Sep 07</strong><br>Wed</td>
 <td markdown="block">
 * Introductions
 * JavaScript Basics
@@ -29,7 +29,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="02"></a>
-<tr><td>2</td><td><strong>Sep 08</strong><br>Thu</td>
+<tr><td>2</td><td><strong>Sep 12</strong><br>Mon</td>
 <td markdown="block">
 * Objects
 * Node
@@ -43,7 +43,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="03"></a>
-<tr><td>3</td><td><strong>Sep 13 </strong><br>Tue</td>
+<tr><td>3</td><td><strong>Sep 14 </strong><br>Wed</td>
 <td markdown="block">
 * Higher Order Functions
 * Objects and Prototypes
@@ -56,7 +56,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="04"></a>
-<tr><td>4</td><td><strong>Sep 15</strong><br>Thu</td>
+<tr><td>4</td><td><strong>Sep 19</strong><br>Mon</td>
 <td markdown="block">
 * Networking Primer
 * Network Programming
@@ -70,7 +70,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="05"></a>
-<tr><td>5</td><td><strong>Sep 20</strong><br>Tue</td>
+<tr><td>5</td><td><strong>Sep 21</strong><br>Wed</td>
 <td markdown="block">
 * Web Development
 * HTTP
@@ -84,7 +84,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="06"></a>
-<tr><td>6</td><td><strong>Sep 22</strong><br>Thu</td>
+<tr><td>6</td><td><strong>Sep 26</strong><br>Mon</td>
 <td markdown="block">
 
 * Creating a "Framework"
@@ -100,7 +100,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="07"></a>
-<tr><td>7</td><td><strong>Sep 27</strong><br>Tue</td>
+<tr><td>7</td><td><strong>Sep 28</strong><br>Wed</td>
 <td markdown="block">
 * HTTP Module
 * Web Framework
@@ -113,7 +113,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="08"></a>
-<tr><td>8</td><td><strong>Sep 29</strong><br>Thu</td>
+<tr><td>8</td><td><strong>Oct 03</strong><br>Mon</td>
 <td markdown="block">
 * Web Framework Continued
 * Forms, Sessions, etc. Revisited
@@ -127,7 +127,7 @@ nav-state: schedule
 
 
 <!-- ------------ --><a name="09"></a>
-<tr><td>9</td><td><strong>Oct 04</strong><br>Tue</td>
+<tr><td>9</td><td><strong>Oct 05</strong><br>Wed</td>
 <td markdown="block">
 
 * NoSQL Database
@@ -149,7 +149,7 @@ introduce nodemon!
 
 
 <!-- ------------ --><a name="10"></a>
-<tr><td>10</td><td><strong>Oct 06</strong><br>Thu</td>
+<tr><td>10</td><td><strong>Oct 12</strong><br>Wed</td>
 <td markdown="block">
 * Object Document Mapper
 
@@ -164,7 +164,7 @@ introduce nodemon!
 
 
 <!-- ------------ --><a name="11"></a>
-<tr><td>11</td><td><strong>Oct 11</strong><br>Tue</td>
+<tr><td>11</td><td><strong>Oct 17</strong><br>Mon</td>
 <td markdown="block">
 
 * Database Design
@@ -185,7 +185,7 @@ introduce nodemon!
 
 
 <!-- ------------ --><a name="12"></a>
-<tr><td>12</td><td><strong>Oct 13</strong><br>Thu</td>
+<tr><td>12</td><td><strong>Oct 19</strong><br>Wed</td>
 <td markdown="block">
 * Authentication
 
@@ -197,7 +197,7 @@ introduce nodemon!
 
 
 <!-- ------------ --><a name="13"></a>
-<tr><td>13</td><td><strong>Oct 18</strong><br>Tue</td>
+<tr><td>13</td><td><strong>Oct 24</strong><br>Mon</td>
 <td markdown="block">
 * About the Exam, Review
 </td>
@@ -208,7 +208,7 @@ introduce nodemon!
 
 
 <!-- ------------ --><a name="14"></a>
-<tr class="danger"><td>14</td><td><strong>Oct 20</strong><br>Thu</td>
+<tr class="danger"><td>14</td><td><strong>Oct 26</strong><br>Wed</td>
 <td markdown="block">
 MIDTERM
 </td>
@@ -228,7 +228,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="15"></a>
-<tr><td>15</td><td><strong>Oct 25</strong><br>Tue</td>
+<tr><td>15</td><td><strong>Oct 31</strong><br>Mon</td>
 <td markdown="block">
 
 * Authentication Review
@@ -245,7 +245,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="16"></a>
-<tr><td>16</td><td><strong>Oct 27</strong><br>Thu</td>
+<tr><td>16</td><td><strong>Nov 02</strong><br>Wed</td>
 <td markdown="block">
 * HTML Primer, JavaScript and the Browser
 * The Document Object Model
@@ -258,7 +258,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="17"></a>
-<tr><td>17</td><td><strong>Nov 01</strong><br>Tue</td>
+<tr><td>17</td><td><strong>Nov 07</strong><br>Mon</td>
 <td markdown="block">
 * Manipulating Elements
 * Timers
@@ -272,7 +272,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="18"></a>
-<tr><td>18</td><td><strong>Nov 03 </strong><br>Thu</td>
+<tr><td>18</td><td><strong>Nov 09 </strong><br>Wed</td>
 <td markdown="block">
 * Events Revisited
 * CSS Revisited
@@ -284,7 +284,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="19"></a>
-<tr><td>19</td><td><strong>Nov 08</strong><br>Tue</td>
+<tr><td>19</td><td><strong>Nov 14</strong><br>Mon</td>
 <td markdown="block">
 * AJAX
 * APIs
@@ -295,7 +295,7 @@ MIDTERM
 </tr>
 
 <!-- ------------ --><a name="20"></a>
-<tr><td>20</td><td><strong>Nov 10</strong><br>Thu</td>
+<tr><td>20</td><td><strong>Nov 16</strong><br>Wed</td>
 <td markdown="block">
 * AJAX Continued
 * Maybe Promises?
@@ -308,7 +308,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="21"></a>
-<tr><td>21</td><td><strong>Nov 15</strong><br>Tue</td>
+<tr><td>21</td><td><strong>Nov 21</strong><br>Mon</td>
 <td markdown="block">
 
 * Flexbox
@@ -322,7 +322,7 @@ MIDTERM
 
 
 <!-- ------------ --><a name="22"></a>
-<tr><td>22</td><td><strong>Nov 17</strong><br>Thu</td>
+<tr><td>22</td><td><strong>Nov 28</strong><br>Mon</td>
 <td markdown="block">
 * SocketIO
 {% comment %}
@@ -336,7 +336,7 @@ concat and min? grunt and/or gulp?
 
 
 <!-- ------------ --><a name="23"></a>
-<tr><td>23</td><td><strong>Nov 22</strong><br>Tue</td>
+<tr><td>23</td><td><strong>Nov 30</strong><br>Wed</td>
 <td markdown="block">
 * SocketIO Continued 
 * Final Project Deployment
@@ -353,7 +353,7 @@ show react basics
 
 
 <!-- ------------ --><a name="24"></a>
-<tr><td>24</td><td><strong>Nov 29</strong><br>Tue</td>
+<tr><td>24</td><td><strong>Dec 05</strong><br>Mon</td>
 <td markdown="block">
 * Frontend Framework
 {% comment %} consolidate React stuff here maybe from 26 and 27, including build tools {% endcomment %}
@@ -365,7 +365,7 @@ show react basics
 
 
 <!-- ------------ --><a name="25"></a>
-<tr><td>25</td><td><strong>Dec 01</strong><br>Thu</td>
+<tr><td>25</td><td><strong>Dec 07</strong><br>Wed</td>
 <td markdown="block">
 * Frontend Framework Continued
 * Build Tools 
@@ -378,9 +378,9 @@ show react basics
 
 <!-- ------------ -->
 <a name="26"></a>
-<tr><td>26</td><td><strong>Dec 06</strong><br>Tue</td>
+<tr><td>26</td><td><strong>Dec 12</strong><br>Mon</td>
 <td markdown="block">
-* Frontend JavaScript Framework Intro (React)
+* ES6?
 </td>
 <td></td><td></td><td></td>{% comment %}
 {% include schedule/26.markdown %}
@@ -389,9 +389,9 @@ show react basics
 
 
 <!-- ------------ -->
-<tr><td>27</td><td><strong>Dec 08</strong><br>Thu</td>
+<tr><td>27</td><td><strong>Dec 13</strong><br>Tue</td>
 <td markdown="block">
-* Frontend JavaScript Framework Continued (React)
+* Everything Together? / TBD
 </td>
 <td></td><td></td><td></td>{% comment %}
 {% include schedule/27.markdown %}
@@ -399,7 +399,7 @@ show react basics
 </tr>
 
 <!-- ------------ --><a name="28"></a>
-<tr><td>28</td><td><strong>Dec 15</strong><br>Thu</td>
+<tr><td>28</td><td><strong>Dec 14</strong><br>Wed</td>
 <td markdown="block">
 * Review
 </td>
@@ -408,9 +408,9 @@ show react basics
 {% endcomment %}
 </tr>
 
-<tr class="danger"><td></td><td><strong>Dec 20</strong><br>Tue</td>
+<tr class="danger"><td></td><td><strong>Dec 21</strong><br>Wed</td>
 <td markdown="block">
-__FINAL EXAM__ - 8:00AM to 9:50AM, WWH 101
+__FINAL EXAM__ - 4:00PM to 5:50PM, WWH 102
 </td>
 <td></td><td></td>
 <td markdown="block">
