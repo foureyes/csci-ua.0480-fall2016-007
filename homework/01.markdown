@@ -120,11 +120,14 @@ npm install -g jshint
 npm install --save-dev chai
 </code></pre>
 
-Note that the last command will make a modification to an existing file, `package.json`, within your project folder. You should commit the changes made to this file.
+Note that the last command installs a module _locally_ to your project directory. It will do two things:
 
-### (1 point) Install Required Modules
+* It will make a modification to an existing file, `package.json`, within your project folder
+* It will create a `node_modules` folder where your downloaded modules are stored (this folder is included in your `.gitignore` file because these external libraries are not meant to be in your project's version control
 
-You'll need a module to help you ask the user for input. 
+### (1 point) Install Additional Required Modules
+
+You'll also need a module to help you ask the user for input. 
 
 * in your repository directory, install the node module, <code>readline-sync</code>, by running this command in your project's directory:
     <pre><code> npm install --save readline-sync
@@ -132,8 +135,6 @@ You'll need a module to help you ask the user for input.
 * note that the <code>readline-sync</code> module allows you to prompt for user input __synchronously__
 	* this is very different from how node.js apps usually operate
 	* however, for our purposes, using sync prompt is fine (for now), and it mimics the browser's prompt functionality well
-* installing <code>readline-sync</code> will create a folder called <code>node_modules</code> in the directory that you ran npm in (don't worry, it'll be ignored by git!)
-* create a file called <code>app.js</code> (if it isn't already there!)
 * check out the example usage on [readline-sync's npm page](https://www.npmjs.com/package/readline-sync)
     * essentially just `var readlineSync = require('readline-sync');`
     * which imports the function <code>question</code> from the <code>readline-sync</code> module into your program
