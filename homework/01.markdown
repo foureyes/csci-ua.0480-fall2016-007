@@ -1260,7 +1260,7 @@ The top scoring words are:
 
 ### Preparation
 
-1. Find `enable1.txt` in your `src` folder - this is your word list
+1. Find `enable1.txt` in your `data` folder - this is your word list
 2. Find `scrabble.js` in your `src` folder - this is where you'll write your program
 3. In `scrabble.js`, require the built-in `readline` and `fs` modules:
     <pre><code data-trim contenteditable>var readline = require('readline');
@@ -1339,7 +1339,12 @@ console.log('last line of program!');
 
 The score for a word is calculated by summing the point values of each letter in the word. You can use the following object to associate letters with point values:
 
-<pre><code data-trim contenteditable>var letterValues = { "E": 1, "A": 1, "I": 1, "O": 1, "N": 1, "R": 1, "T": 1, "L": 1, "S": 1, "U": 1, "D": 2, "G": 2, "B": 3, "C": 3, "M": 3, "P": 3, "F": 4, "H": 4, "V": 4, "W": 4, "Y": 4, "K": 5, "J": 8, "X": 8, "Q": 10, "Z": 10 };
+<pre><code data-trim contenteditable>var letterValues = { 
+        "E": 1, "A": 1, "I": 1, "O": 1, "N": 1, "R": 1, "T": 1, "L": 1, 
+        "S": 1, "U": 1, "D": 2, "G": 2, "B": 3, "C": 3, "M": 3, "P": 3, 
+        "F": 4, "H": 4, "V": 4, "W": 4, "Y": 4, "K": 5, "J": 8, "X": 8, 
+        "Q": 10, "Z": 10 
+};
 </code></pre>
 
 You'll likely want to represent each word as an object... with the actual word as one property and the word's score as a second property. You can then sort an `Array` of these "word/score" objects using the [sort method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) on your `Array`.
