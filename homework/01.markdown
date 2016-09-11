@@ -9,7 +9,7 @@ title: CSCI-UA.0480 - Homework #1
 
 # Tic Tac Toe and Scrabble Pal
 
-## Due __Sep 15th, by 11PM__
+## Due __Sep 19th, by 11PM__
 
 <div markdown="block" class="img">
 ![tic tac toe from wargames](../resources/img/hw01-t3-wargames.gif)
@@ -86,7 +86,7 @@ Make sure you have git / a git client!
 
 Then go through the following steps to clone your repository and commit your first changes.
 
-1. use this [form to send me your github username](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSc5nfsSm27DyBWOb-_mfCNMS0fyWxvsuX_moK6EOaruVGqWlg/viewform)
+1. use this [form to send me your github username](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSenWtVL5yc-GsY2PFbWkJgTRL8GjQDcPXfFiCEt5olV7nIufQ/viewform)
 2. wait for a notification that states that you've been added to the class's github _organization_
 3. I'll create a repository for you 
 4. ...go to the [class github page](https://github.com/nyu-csci-ua-0480-007-fall-2016)
@@ -125,9 +125,9 @@ Note that the last command installs a module _locally_ to your project directory
 * It will make a modification to an existing file, `package.json`, within your project folder
 * It will create a `node_modules` folder where your downloaded modules are stored (this folder is included in your `.gitignore` file because these external libraries are not meant to be in your project's version control
 
-### (1 point) Install Additional Required Modules
+### (1 point) Install Required Modules
 
-You'll also need a module to help you ask the user for input. 
+You'll also need a module to help you ask the user for input.
 
 * in your repository directory, install the node module, <code>readline-sync</code>, by running this command in your project's directory:
     <pre><code> npm install --save readline-sync
@@ -139,6 +139,7 @@ You'll also need a module to help you ask the user for input.
     * essentially just `var readlineSync = require('readline-sync');`
     * which imports the function <code>question</code> from the <code>readline-sync</code> module into your program
 * note that installing `readline-sync` will make a modification to `package.json`. This modification be committed these changes.
+* you'll use this module in both your Tic Tac Toe game and your scrabble solver
 
 ### (4 points) Minimum Number of Commits
 
@@ -163,7 +164,7 @@ To run your programs, use the commandline (Terminal.app, DOS, etc.):
 
 For your implementation of Tic Tac Toe, you'll break down the game into several functions. These helper functions will be written in a _module_ (a file separate from the file that actually runs your game), which you'll use in part 3: `src/tic-tac-toe.js`
 
-The helper functions you'll be implementing are described below. Unit tests have been included in your repository in the file, `tests/tic-tac-toe-test.js`. 
+The helper functions you'll be implementing are described below. Unit tests have been included in your repository in the file, `test/tic-tac-toe-test.js`. 
 
 ### Creating a Module / Exporting Functions 
 
@@ -1340,10 +1341,9 @@ console.log('last line of program!');
 The score for a word is calculated by summing the point values of each letter in the word. You can use the following object to associate letters with point values:
 
 <pre><code data-trim contenteditable>var letterValues = { 
-        "E": 1, "A": 1, "I": 1, "O": 1, "N": 1, "R": 1, "T": 1, "L": 1, 
-        "S": 1, "U": 1, "D": 2, "G": 2, "B": 3, "C": 3, "M": 3, "P": 3, 
-        "F": 4, "H": 4, "V": 4, "W": 4, "Y": 4, "K": 5, "J": 8, "X": 8, 
-        "Q": 10, "Z": 10 
+        "E": 1, "A": 1, "I": 1, "O": 1, "N": 1, "R": 1, "T": 1, "L": 1, "S": 1, "U": 1, 
+        "D": 2, "G": 2, "B": 3, "C": 3, "M": 3, "P": 3, "F": 4, "H": 4, "V": 4, "W": 4, 
+        "Y": 4, "K": 5, "J": 8, "X": 8, "Q": 10, "Z": 10 
 };
 </code></pre>
 
@@ -1480,6 +1480,30 @@ function handleUserInput(userPrompt, greeting, response) {
 }
 main();
 </code></pre>
+
+__Issues Reading a File__
+
+When creating a readline interface for reading a file, the fileName argument to the `createReadStream` function expects a path to a file. Depending on where you're running node from (what directory), you'll have to figure out what the relative or absolute path is to `data/enable1.txt`.
+
+The syntax is like this:
+
+<pre><code data-trim contenteditable>fileInput = readline.createInterface({ 
+    input: fs.createReadStream(fileName)
+});
+</code></pre>
+
+The easiest way to deal with this is to set `fileName` to an absolute path. This way, it can work anywhere you run node. 
+
+`/Users/jversoza/project/homework01/data/enable1.txt`
+
+If you're running your program from your project directory, then fileName should be:
+
+`data/enable1.txt`
+
+If you're running from your `src`, then fileName should be:
+
+`../data/enable1.txt`
+
 
 __Reading a file after user input is not working__
 
