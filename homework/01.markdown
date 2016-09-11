@@ -36,7 +36,7 @@ See the [example game](#hw01-tic-tac-toe-sample) shown at the end of these instr
 
 __Part 3__  - Scrabble Pal
 
-Create a scrabble solver. It will allow you to enter a string of letters... and it will output the 5 highest scoring words that can be constructed from those letters. The scores for each word are on these [rules](https://en.wikibooks.org/wiki/Scrabble/Rules#Scoring), using the following [letter values](http://www.wordfind.com/scrabble-letter-values/). 
+Create a scrabble solver. It will allow you to enter a string of letters... and it will output the 3 highest and 3 lowest scoring words that can be constructed from those letters. The scores for each word are on these [rules](https://en.wikibooks.org/wiki/Scrabble/Rules#Scoring), using the following [letter values](http://www.wordfind.com/scrabble-letter-values/). 
 
 See the [sample output](#hw01-scrabble-pal-sample) at the end of these instructions.
 
@@ -1246,17 +1246,20 @@ if(move === undefined) {
 ## Part 3 - Scrabble Pal
 
 
-Create a program that asks the user for a series of letters. It will output the 5 highest scoring words in Scrabble that can be formed from the letters entered (not all of the letters have to be used to form a word). Here's an example interaction:
+Create a program that asks the user for a series of letters. It will output the 3 highest scoring words and 3 lowest scoring words in Scrabble that can be formed from the letters entered (not all of the letters have to be used to form a word). Here's an example interaction:
 
-<pre><code data-trim contenteditable>Please enter some letters:
->axdvree
+<pre><code data-trim contenteditable>Please enter a word:
+>yyeets
 
-The top scoring words are:
-16 - vexed
-15 - vexer
-14 - exedra
-13 - raxed
-13 - vex
+The top scoring words in ascending order are:
+7 - stye
+7 - eyes
+8 - tyees
+
+The lowest scoring words in ascending order are:
+2 - es
+2 - et
+3 - tee
 </code></pre>
 
 ### Preparation
@@ -1347,7 +1350,7 @@ The score for a word is calculated by summing the point values of each letter in
 };
 </code></pre>
 
-You'll likely want to represent each word as an object... with the actual word as one property and the word's score as a second property. You can then sort an `Array` of these "word/score" objects using the [sort method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) on your `Array`.
+You'll likely want to represent each word as an object... with the actual word as one property and the word's score as a second property. You can then sort an `Array` of these "word/score" objects using the [sort method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) on your `Array`. This method behaves strangely when sorting numbers because __it converts everything to strings!__.
 
 The `sort` method also requires a callback function... which is used to compare the values in the `Array`. Check out the following example where the `Array`, `numbers` is sorted from highest to lowest:
 
@@ -1366,7 +1369,8 @@ numbers.sort(function(a, b) {
 });
 console.log(numbers);
 
-// for ascending, swap the 1 and -1 (or really, just omit the callback / compare function)!
+// alternatively, just subtract the two values (a - b)
+// for ascending, swap the 1 and -1 
 </code></pre>
 
 Note that the compare / callback function is an anonymous function that returns a positive, negative or zero value. If a positive value is returned, it means that the first argument passed in is greater, and should occur after the second element in the sorted `Array`.
