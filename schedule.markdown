@@ -61,9 +61,7 @@ nav-state: schedule
 * Streams / Buffers / IO
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/04.markdown %}
-{% endcomment %}
 </tr>
 
 
