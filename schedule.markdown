@@ -73,9 +73,7 @@ nav-state: schedule
 * A Simple Web Server
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/05.markdown %}
-{% endcomment %}
 </tr>
 
 
