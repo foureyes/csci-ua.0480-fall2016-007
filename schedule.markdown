@@ -87,9 +87,7 @@ nav-state: schedule
 * Forms
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/06.markdown %}
-{% endcomment %}
 </tr>
 
 
