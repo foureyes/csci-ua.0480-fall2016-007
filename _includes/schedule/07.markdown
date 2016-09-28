@@ -1,15 +1,12 @@
 	<td markdown="block">
-* [Objects and Prototypes Summary](slides/07/objects-review.html)
-* [Patterns, Errors, Use Strict from Previous Class](slides/06/patterns-errors-strict.html)
-* [Intro to Web Development](slides/07/web.html)
-* [A Web Server](slides/07/server.html)
+* [About Class #7, Homework, Quizzes, Survey Results](slides/07/meta.html)
+* [HTTP Summary](slides/07/http-summary.html)
+* [Sockets Review](slides/07/sockets-review.html)
+* Live Coding Demo: [Routing / Dispatching](https://github.com/nyu-csci-ua-0480-001-fall-2016/examples)
 * [Node's HTTP Module](slides/07/node-http.html)
+* Live Coding Demo: [Binding Methods](https://github.com/nyu-csci-ua-0480-001-fall-2016/examples)
 </td>
 	<td markdown="block">
-* [{{ site.book_js }}]({{ site.books_js_link }}) <br> Chapter 13 - JavaScript and the Browser
-* [{{ site.book_js }}]({{ site.books_js_link }}) <br> Chapter 17 - HTTP (up to browsers and http)
-* {{ site.book_web }} <br> Chapter 1 - Introducing Express
-* {{ site.book_web }} <br> Chapter 2 - Getting Started With Node
 </td>
 	<td markdown="block">
 

@@ -1,6 +1,6 @@
 ---
 layout: slides
-title: "About Class #7"
+title: "About Class #8"
 ---
 <section markdown="block" class="intro-slide">
 # {{ page.title }}
@@ -9,79 +9,6 @@ title: "About Class #7"
 
 <p><small></small></p>
 </section>
-
-<section markdown="block">
-## Homework Homework Homework
-
-__[Homework #3](../../homework/03.html) was posted Monday, and is due next Wednesday__
-
-* {:.fragment} you should have your repositories with starter files now!
-* {:.fragment} it's fairly different from the previous homeworks, so it'll be more stimulating/challenging (it incorporates material from objects/prototypes, higher order functions, socket programming, and http!)
-* {:.fragment} however, the amount of code you write will likely be no more than homework #01
-
-<br>
-Speaking of homework 01, grades should be posted by the end of this week.
-{:.fragment}
-
-</section>
-
-<section markdown="block">
-##  Quizzes
-
-__Quizzes #2 (Oject Basics) and #3 (Objects and Prototypes) are due on Thursday.__ &rarr;
-
-* {:.fragment} all about objects but split into two parts, with 17 questions total
-* {:.fragment} first set is super easy; 7 questions
-* {:.fragment} second set is slightly more challenging because it deals with prototypes; it has 10 questions, with some questions __being very similar but with subtle differences__
-* {:.fragment} please inform me of any issues regarding quizzes; one correction was already made (and quizzes regraded accordingly)
-
-</section>
-
-<section markdown="block">
-## Survey Results
-
-[Here are some of the aggregate survey results](../../resources/img/survey.png)
-
-__So, what does this mean?__ &rarr;
-
-* {:.fragment} _classic curve_ here, and it looks like pacing is mostly ok for the middle part of that curve (slight tendency towards go slower); for those on either end, let's talk (email me, make an appointment)!
-* {:.fragment} but homework is very very vary slightly on the easy side, probably negligible ... though I think homework #03 will be adequately challenging and fun
-* {:.fragment} there is some demand for a git tutorial, but not enough to devote an in-class lecture; i will do an out-of-class workshop
-* {:.fragment} hm... for tutoring, i'll see what I can do about scheduling after 5pm tutoring hours
-</section>
-
-{% comment %}
-<section markdown="block">
-## 
-* remove ref to chap 5 - 6 (in req res slides?(
-* add eslint and jscs to linting tools
-* bring in hbs instead of express-handlebars
-
-* survey says!
-* what was this net / socket thing about
-    * making tcp/ip servers
-    * quick review of api
-    * createServer
-    * sock
-        * on data / close
-        * write
-        * end
-* show example from previous class
-    * how did it work?
-    * getting it to talk http
-* hmmmm .. that was a lot of work, anything easier?
-* a brief tour of http module
-    * example of a server
-    * with paths using if/else
-* still not great - why not?
-*
-
-
-
-</section>
-{% endcomment %}
-
-{% comment %}
 
 <section markdown="block">
 # Done With JavaScript, Finally!
@@ -214,4 +141,3 @@ __Homework #1__ grades should be posted this week
 [BTW, have you been following along with the readings](../../schedule.html#class08) &rarr;
 
 </section>
-{% endcomment %}
