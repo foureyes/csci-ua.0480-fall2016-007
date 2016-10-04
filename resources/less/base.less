@@ -49,6 +49,8 @@
 // @hero_highlight: @white;
 @hero_highlight: @pale_yellow;
 
+@highlight: @yellow;
+
 @panel_title_background: @black;
 @panel_background: @gray;
 @panel_border: @dark_gray;
@@ -150,4 +152,15 @@ strong {
 	li li {
 			display: none;
 	}
+}
+
+#quick-links {
+	text-align: center;
+	padding: 0.5em;
+}
+
+#quick-links > h3 > a {
+	display: inline-block;
+	padding: 0.25em;
+	background-color: @highlight;
 }
