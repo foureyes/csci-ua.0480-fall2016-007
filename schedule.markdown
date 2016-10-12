@@ -122,9 +122,6 @@ nav-state: schedule
 <tr><td>9</td><td><strong>Oct 05</strong><br>Wed</td>
 <td markdown="block">
 * Web Framework Continued
-* Cookies
-* Sessions
-* Forms
 * Middleware
 * Templating
 
@@ -145,16 +142,16 @@ introduce nodemon!
 <!-- ------------ --><a name="10"></a>
 <tr><td>10</td><td><strong>Oct 12</strong><br>Wed</td>
 <td markdown="block">
-* NoSQL Database
-* Object Document Mapper
+* Cookies
+* Sessions
+* Forms
+
 
 {% comment %} 
 * Using GET / Review
 {% endcomment %}
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/10.markdown %}
-{% endcomment %}
 </tr>
 
 
@@ -162,6 +159,8 @@ introduce nodemon!
 <tr><td>11</td><td><strong>Oct 17</strong><br>Mon</td>
 <td markdown="block">
 
+* NoSQL Database
+* Object Document Mapper 
 * Database Design
 
 {% comment %}
@@ -173,9 +172,7 @@ introduce nodemon!
 {% endcomment %}
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/11.markdown %}
-{% endcomment %}
 </tr>
 
 
