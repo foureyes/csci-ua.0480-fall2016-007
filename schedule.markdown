@@ -179,6 +179,7 @@ introduce nodemon!
 <!-- ------------ --><a name="12"></a>
 <tr><td>12</td><td><strong>Oct 19</strong><br>Wed</td>
 <td markdown="block">
+* Database Design Continued
 * Authentication
 
 </td>
