@@ -183,9 +183,7 @@ introduce nodemon!
 * Authentication
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/12.markdown %}
-{% endcomment %}
 </tr>
 
 
