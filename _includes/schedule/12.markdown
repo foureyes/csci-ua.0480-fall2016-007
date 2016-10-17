@@ -1,11 +1,14 @@
 	<td markdown="block">
 
 * [About Class #12](slides/12/meta.html)
-* [Mongo DB (From Previous Class)](slides/11/mongo.html)
+* Review / Any More Homework #04 Questions?
+* [Mongo DB  and Mongoose (From Previous Class)](slides/11/mongo.html)
+* [Maybe More Mongoose](slides/12/mongoose.html)
 * Example Data (from CSCI-UA.60)
 	* [book fields](resources/data/books_fields.txt)
 	* [books](resources/data/books.csv)
 	* [wifi](resources/data/wifi3.json) (NYC Open Data)
+* Homework #05
 
 
 </td>
@@ -19,6 +22,11 @@
 
 Midterm Practice
 
-* [midterm practice](resources/handouts/midterm/midterm_1_practice.pdf)
-* [midterm practice solutions](resources/handouts/midterm/midterm_1_practice_solutions.pdf)
+* [midterm practice](resources/handouts/midterm_1/midterm_1_practice.pdf)
+* [midterm practice solutions](resources/handouts/midterm_1/midterm_1_practice_solutions.pdf)
+
+Due Monday, October 31st at 11PM
+
+* (after midterm, but worth trying before!)
+* [Homework #05](homework/05.html)
 </td>
