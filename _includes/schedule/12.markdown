@@ -25,7 +25,7 @@ Midterm Practice
 * [midterm practice](resources/handouts/midterm_1/midterm_1_practice.pdf)
 * [midterm practice solutions](resources/handouts/midterm_1/midterm_1_practice_solutions.pdf)
 
-Due Monday, October 31st at 11PM
+Due Saturday, October 31st at 11PM
 
 * (after midterm, but worth trying before!)
 * [Homework #05](homework/05.html)
