@@ -1,10 +1,16 @@
 	<td markdown="block">
 
+* Finish up [Mongoose](slides/15/mongoose.html) and [Validation](slides/15/validation.html) from previous class
+* Checkboxes?
+* [Authentication](slides/16/auth.html)
+* [High-Level Description of SSL/TLS](slides/16/ssl.html)
+
 {% comment %}
 * Go over the slides on [Mongoose](slides/15/mongoose.html) from the previous class
 * Go over the slides on [Validation](slides/15/validation.html) from the previous class
 {% endcomment %}
 
+{% comment %}
 * package.json, hw started?
 * review scaffolding, focusing on routes
 * go over the slides on [url parameters](slides/15/params.html) from the previous class
@@ -12,6 +18,7 @@
 * create a [unique](https://docs.mongodb.org/manual/tutorial/create-a-unique-index/) [index](https://docs.mongodb.org/manual/core/indexes-introduction/)?
 * check out mongoose ([see previous slides](slides/15/mongoose.html))
 * [Authentication](slides/16/auth.html)
+{% endcomment %}
 
 {% comment %}
 * [Mongoose](slides/15/mongoose.html)
@@ -48,8 +55,6 @@
 -->
 </td>
 	<td markdown="block">
-
-* {{site.book_web}} - Chapter 18 - Security
 
 Passport Examples
 
