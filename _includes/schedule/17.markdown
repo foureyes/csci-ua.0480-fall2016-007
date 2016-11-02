@@ -11,15 +11,22 @@ Slides
 	* final projects
 	* midterm
 {% endcomment %}
-* see previous class on authentication
+{% comment %}
+* Quick authentication and SSL review
+* Midterm exam 
+* Homework extra credit
+{% endcomment %}
 * [HTML Primer, JavaScript and the Browser](slides/17/javascript-browser.html)
 * [The Document Object Model](slides/17/dom.html)
 * [DOM Continued](slides/17/dom-continued.html)
+* [Attributes](slides/17/attributes.html)
 
+{% comment %}
 Solution Sets
  
 * [Midterm Solutions](resources/handouts/midterm/midterm_coffee_solutions.pdf)
 * [Midterm Solutions (Alternate)](resources/handouts/midterm/midterm_nomoji_solutions.pdf )
+{% endcomment %}
 
 <!-- 
 * [](slides//.html)
