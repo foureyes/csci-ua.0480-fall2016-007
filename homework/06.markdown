@@ -7,7 +7,7 @@ title: CSCI-UA.0480 - Homework #6
 	<div class="panel-heading">Homework #6</div>
 	<div class="panel-body" markdown="block">
 
-# Image Posting Board - __Due Thursday, November 3rd, by 11PM__
+# Image Posting Board - __Due Monday, November 7th, by 11PM__
 
 ## Overview
 
