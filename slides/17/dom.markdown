@@ -212,7 +212,7 @@ __And... let's see what these look like.__ &rarr;
 <section markdown="block">
 ## An Exercise
 
-[Write a function](https://docs.google.com/a/nyu.edu/forms/d/1bqPF8NaUAj1AtVwEcnWnEoaeriOU6MWRmTPpZ0BuGR0/viewform) called <code>talksAbout</code>. Test on this [markup](https://gist.github.com/foureyes/bf13be6e98f1bf0211652a74ba2e4870).
+Write a function called <code>talksAbout</code>. Test on this [markup](https://gist.github.com/foureyes/bf13be6e98f1bf0211652a74ba2e4870).
 
 * two parameters, a node to search in, and a string to look for 
 * returns true if it finds the string anywhere within the node or the node's children
