@@ -1,4 +1,12 @@
 	<td markdown="block">
+
+* [Layout and Style](slides/19/layout-style.html)
+* [JavaScript Timers](slides/19/timers.html)
+* [Events](slides/19/events.html)
+* [CSS](slides/19/css.html)
+* [Selectors, JS and CSS](slides/19/js-css.html)
+
+{% comment %}
 * homework
     * extra credit
 * final project
@@ -13,6 +21,7 @@
 * [Events](slides/19/events.html)
 * [CSS](slides/19/css.html)
 * [Selectors, JS and CSS](slides/19/js-css.html)
+{% endcomment %}
 
 {% comment %}
 * clean up modifying and creating eleemnts
@@ -32,13 +41,12 @@
 </td>
 	<td markdown="block">
 
+{% comment %}
 In class activity
 
 * [Form to submit talksAbout function](https://docs.google.com/a/nyu.edu/forms/d/1bqPF8NaUAj1AtVwEcnWnEoaeriOU6MWRmTPpZ0BuGR0/viewform)
 * [Instructions / slides](slides/17/dom.html#/14)
 
-Due Tuesday, April 12th
-
-* [Homework #6](homework/06.html)
+{% endcomment %}
 
 </td>
