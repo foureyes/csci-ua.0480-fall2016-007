@@ -23,6 +23,6 @@ Midterm Exam - Solution Sets
 	<td markdown="block">
 Due Wednesday, November 16th
 
-* [Milestone #2 - Deployment and Form](final-project.html#milestone2)
+* [Milestone #2 - Deployment](final-project.html#milestone2)... [and Form](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSfNVdjXefEJRdx_NmC26VI6GJfj_ezcnwB2UHR4C9C8nDJPVA/viewform)
 * Maybe... depending on what we cover today, also: [Homework #7](homework/07.html)
 </td>

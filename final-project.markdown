@@ -183,7 +183,7 @@ Choose at least __8 points__ worth of these following topics (research and imple
 ### 11/16 - Milestone 2 - Initial Deployment and First Form (10 points)
 
 1. attempt to deploy your code to i6 by following [these instructions](homework/deploy.html)
-2. use [this form to submit urls to your deployed site](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSfchChY_C3W0IQq17VUfmuZ5Bjdw1Nk4GJfLj_2lB9aoV62KQ/viewform)
+2. use [this form to submit urls to your deployed site](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSfNVdjXefEJRdx_NmC26VI6GJfj_ezcnwB2UHR4C9C8nDJPVA/viewform)
 3. your deployed site should contain the following progress:
     * __one working form (that is not login or registration)__ 
         * ...that should allow data to be modified or deleted
