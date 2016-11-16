@@ -282,9 +282,7 @@ MIDTERM
 * APIs
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/20.markdown %}
-{% endcomment %}
 </tr>
 
 
