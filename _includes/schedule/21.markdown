@@ -1,17 +1,7 @@
 	<td markdown="block">
-* [Selectors, JS and CSS](slides/19/js-css.html)
-* [More About Events](slides/20/events-more.html)
+* [Ajax Part 2](slides/21/ajax-express.html)
+* [Promises](slides/21/promises.html)
 
-	{% comment %}
-* [Flexbox, Grids](slides/20/flexbox.html)
-* [SASS](slides/20/sass.html)
-)
-* [gulp](slides/20/gulp.html)
-	{% endcomment %}
-<!-- 
-* [](slides//.html)
-* [](slides//.html)
--->
 </td>
 	<td markdown="block">
 <!--
@@ -20,8 +10,7 @@
 -->
 </td>
 	<td markdown="block">
-Due Friday, April 22nd
+Due Monday, November 28th
 
-* [Project 2 Milestone ](final-project.html#milestone2)
-* [Homework #7](homework/07.html)
+* [Homework #8](homework/08.html) - Last Homework!
 </td>

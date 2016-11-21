@@ -295,9 +295,7 @@ MIDTERM
 * CSS Meta Languages
 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/21.markdown %}
-{% endcomment %}
 </tr>
 
 
