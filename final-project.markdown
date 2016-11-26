@@ -27,7 +27,7 @@ pre {
 	<div class="panel-heading">Final Project</div>
 	<div class="panel-body" markdown="block">
 
-# __Final Project, Due Saturday, Dec 3rd at 11pm__
+# __Final Project, Due <strike>Saturday, Dec 3rd at 11pm</strike> Thursday, Dec 8th at 11pm __
 
 ## Overview 
 
@@ -193,95 +193,28 @@ Choose at least __8 points__ worth of these following topics (research and imple
         * a link to the github repository / line no
 
 
-{% comment %}
-Prototype With Some Implemented Functionality (10 points total)
-
-1. (4 points) create at least 1 form that can add data to your database
-2. (3 points) have at least 1 page that reads data from your database
-3. (3 points) partially implement one of your research topics
-4. create a markdown file called <code>milestone02.md</code>
-    * specify the url that shows your form (for example, <code>http://localhost:3000/pizzas</code>)
-    * specify the url that shows a page reading data
-    * specify the url or directory for your research topic
-5. make sure that you have a <code>package.json</code> with all of your project's required dependencies so that numbers 1 through 3 will function
-6. __after pushing your code to github__:
-    * clone your project in a different directory
-    * run <code>npm install</code> and <code>nodemon bin/www</code> 
-    * and verify that your project works
-    * (if your project is not _runnable_, you will not receive credit for this milestone)
-{% endcomment %}
-
-{% comment %} 
-* 1 or more forms and their corresponding route handlers
-* Demonstrate that at least 2 route handlers can read and write from MongoDB
-* Proof of concepts for some of your research topics (for example, if you wanted to use sass, I'd expect that you've made some progress integrating it into your project)
-* Prep for deploying your project
-    * Directions to be added for deploy prep
-    To prep for deploying your app so that it's accessible online... retrieve your password for the cs department's server for undergraduate students (i6)  and ensure that you can log in:
-	1. Get the new password that you'll use to log in to i6 by going to https://cims.nyu.edu/webapps/password ...and entering your netid and password
-	2. Use the i6 password that you received to log in to a remote server using the commandline tool, ssh (substituting your lowercase net id for your_net_id): <code>ssh your_net_id@i6.cims.nyu.edu</code>
-	3. If you're unable to do this, please email me!
-* (If you're not using the technologies above, use your best judgement to determine what's an appropriate amount of progress)
-* Lastly, bring your laptop to class on Tuesday, the 24th so that we can try deploying a test node application!!! (and potentially deploying your prototype!)
-
-<br>
-<br>
-<br>
-<br>
-{% endcomment %} 
-
 <a name="milestone3">
 
-### Date TBD - Milestone 3
-
-{% comment %}
-1. attempt to deploy your code to i6 by following [these instructions](homework/deploy.html)
-2. use [this form to send me the urls](https://docs.google.com/a/nyu.edu/forms/d/112J7_jnQFozXiLUtHdRIxcCFnEomEMdCYbnNLX5AyrQ/viewform) of: 
-    * two working forms in your __deployed__ application 
-        * they should allow data to be modified or deleted
-        * the results of these forms should be apparent/viewable
-    * show progress on at least 2 of your research topics; the url that shows you've implemented what you've researched can be:
-        * a page on your site that's deployed to i6
-        * a link to the github repository / line no
-3. I can augment my office hours on Monday if you need help with deployment
-    * (really, deployment will be the bulk of your _work_ ... if you completed the previous milestone, then there will be little work for you to do to complete #2)
-    * send me an email if you're having issues with deploying
-
-<br>
-<br>
-<br>
-<br>
-{% endcomment %}
-
-
-<a name="milestone4">
-
-### __12/2__ - Final Project Complete and Code is fully  _Deployed_ 
-
-{% comment %}
-* __(extended from Fri, 5/6 to Sun, 5/8)__ to allow some time over the weekend to finish up project
-* late submissions accepted within __24 (Mon, 5/9) hours with 10% penalty__ applied to this last milestone (regardless of previous lates)
-* day after final exam submissions accepted with significant penalty (-25% of total possible points) upon email request
-* after that, no submissions will be accepted
-{% endcomment %}
-
 <br>
 <br>
 <br>
 
-<a name="suggestions">
+### 12/2 - Milestone 3 - 2nd Form and More Progress on Research(10 points)
 
-{% comment %}
-## Potential Projects
+1. make at least 3 additional commits to add:
+    * your 2nd form / ajax interaction
+    * make more progress on your research topics
+2. redeploy your code to i6 by running git pull and restarting forever
+    1. `ssh` into i6
+    2. `cd` into your project directory (should be in `~/opt/NETID-final-project`)
+    3. run `forever stopall` and `forever start bin/www` 
+        * __YOU MUST MAKE SURE THIS IS WORKING AFTER DECEMBER 1ST DUE TO SCHEDULED DOWNTIME FOR SERVERS__
+        * you'll have to use the full path to forever, likely `~/usr/local/node_modules/bin/forever`
+        * and perhaps the full bath to `bin/www`
+3. use [this form to submit urls for the following](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdZamAL1MURfHInQPWjLjcs0xB__QOyjiwl1J_YNROJD8c5gg/viewform)
+    * __both working forms or ajax interactions (that are not login or registration)__ 
+    * a link to show code changes since milestone #2:
+        * start with the url to your repository: `https://github.com/nyu-csci-ua-0480-007-fall-2016/NETID-final-project/`
+        * and append the following to the url: `compare/master@%7B11-18-16%7D...master`
+        * for example: `https://github.com/nyu-csci-ua-0480-007-fall-2016/NETID-final-project/compare/master@%7B11-18-16%7D...master`
 
-* A project portfolio site
-* Create a one-player game with a computer AI - allow logins, saved high scores, saved games
-	* Maybe a card game building off of handy (blackjack) 
-    * or something like Cookie Clicker ...
-	* or a Battleship clone
-	* or a platformer
-* Or... whatever you can come up with!
-{% endcomment %}
-</div>
-</div>
-</div> 

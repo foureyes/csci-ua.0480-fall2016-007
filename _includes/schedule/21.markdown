@@ -10,7 +10,8 @@
 -->
 </td>
 	<td markdown="block">
-Due Monday, November 28th
+Due <strike>Monday, November 28th</strike> Friday, December 2nd
 
-* [Homework #8](homework/08.html) - Last Homework!
+* [Homework #8](homework/08.html) - (extended) Last Homework!
+* [Milestone #3](final-project.html#milestone3) 
 </td>

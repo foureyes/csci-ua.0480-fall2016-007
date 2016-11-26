@@ -38,5 +38,5 @@ Due Monday, November 7th at 11pm
 
 * [Homework #06](homework/06.html)
 * [First milestone](final-project.html#proposal)
-    * (12/3 - [Final Project](final-project.html))
+    * (12/8 - [Final Project](final-project.html))
 </td>
