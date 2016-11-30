@@ -302,31 +302,26 @@ MIDTERM
 <!-- ------------ --><a name="22"></a>
 <tr><td>22</td><td><strong>Nov 28</strong><br>Mon</td>
 <td markdown="block">
-* SocketIO
+* Promises Continued
 {% comment %}
 concat and min? grunt and/or gulp?
 {% endcomment %}
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/22.markdown %}
-{% endcomment %}
 </tr>
 
 
 <!-- ------------ --><a name="23"></a>
 <tr><td>23</td><td><strong>Nov 30</strong><br>Wed</td>
 <td markdown="block">
-* SocketIO Continued 
-* Final Project Deployment
+* SocketIO 
 {% comment %}
 remove css refresher 
 flexbox, etc from old 24
 show react basics
 {% endcomment %}
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/23.markdown %}
-{% endcomment %}
 </tr>
 
 

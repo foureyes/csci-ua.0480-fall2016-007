@@ -3,7 +3,7 @@
 * [About Class #22](slides/22/meta.html)
 {% endcomment %}
 
-* [Ajax Part 1](slides/20/ajax.html)
+* Previous class on Promises
 
 {% comment %}
 * (from forever ago) [CSS](slides/19/css.html)
