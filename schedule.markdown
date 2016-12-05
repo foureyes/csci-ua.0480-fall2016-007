@@ -331,9 +331,7 @@ show react basics
 * Frontend Framework
 {% comment %} consolidate React stuff here maybe from 26 and 27, including build tools {% endcomment %}
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/24.markdown %}
-{% endcomment %}
 </tr>
 
 
