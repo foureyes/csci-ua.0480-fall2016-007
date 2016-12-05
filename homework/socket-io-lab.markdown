@@ -34,7 +34,7 @@ Make a real time web app that:
 ### Submission Process
 
 1. You can work as individuals or in groups
-2. Submit your code through [this google form](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdmF51oafE7ehLw56EPxg5nV5YxizkJef-W6Loh59qncR2xWg/viewform)
+2. Submit your code through [this google form](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSemeHqPeVOljn0cMcEm6EB0iaedw95SOS-AcATqZhhdz8IpNQ/viewform)
     * if working in a group, you only need to submit one form
     * add the net ids of the students in the group in the form
 
