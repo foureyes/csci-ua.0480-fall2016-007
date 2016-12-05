@@ -1,8 +1,8 @@
 	<td markdown="block">
 {% comment %}
 {% endcomment %}
-* [es6/es2015/esnext](slides/25/es6.html) 
-* [Rooms](slides/25/socketio-rooms.html) 
+* [es6/es2015/esnext](slides/24/es6.html) 
+* [Rooms](slides/24/socketio-rooms.html) 
 * [Socket IO Lab](homework/socket-io-lab.html)
     * [Form to submit](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSemeHqPeVOljn0cMcEm6EB0iaedw95SOS-AcATqZhhdz8IpNQ/viewform)
 </td>
