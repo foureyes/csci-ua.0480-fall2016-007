@@ -10,10 +10,7 @@
 
 * [Hello World](https://facebook.github.io/react/docs/hello-world.html) and [Official Tutorial](https://facebook.github.io/react/tutorial/tutorial.html)
 * [Build With React](http://buildwithreact.com/)
-<!--
-* Chapter 
-* Chapter 
--->
+
 </td>
 	<td markdown="block">
 <!--
