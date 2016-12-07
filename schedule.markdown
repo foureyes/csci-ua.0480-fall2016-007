@@ -341,9 +341,7 @@ show react basics
 * Frontend Framework Continued
 * Build Tools 
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/25.markdown %}
-{% endcomment %}
 </tr>
 
 
