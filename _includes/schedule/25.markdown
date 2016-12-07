@@ -1,10 +1,15 @@
 	<td markdown="block">
 
-* [Socket IO Intro](slides/24/socketio.html) (from previous class)
-* [Deployment](homework/deploy.html)
+* [React Basics](slides/25/react.html)
+* [React Revisited](slides/25/react-webpack.html)
+* [React and Express / Using Webpack](slides/25/react-webpack-continued.html)
+
 
 </td>
 	<td markdown="block">
+
+* [Hello World](https://facebook.github.io/react/docs/hello-world.html) and [Official Tutorial](https://facebook.github.io/react/tutorial/tutorial.html)
+* [Build With React](http://buildwithreact.com/)
 <!--
 * Chapter 
 * Chapter 

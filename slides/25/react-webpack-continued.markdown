@@ -80,6 +80,8 @@ __What's the difference between <code>props</code> and <code>state</code>?__ &ra
 
 * {:.fragment} props are controlled _externally_ by whatever is rendering your component (via attributes in JSX!)
 * {:.fragment} state is managed by the component itself
+* {:.fragment} changing state causes a re-render
+* {:.fragment} props are immutable (you can set it when creating a component, but you can't change it afterwards)
 
 </section>
 
@@ -181,42 +183,47 @@ This _is_ valid JSX, right? It works on Codepen... __so what do you think happen
 </section>
 
 <section markdown="block">
-## To the Docs!
-
-[Facebook says that we can do an in browser transform](https://facebook.github.io/react/docs/tooling-integration.html#in-browser-jsx-transform)... 
-
-* our client side JavaScript will include a JSX transformer script / library
-* which means that compilation of JSX into JavaScript will happen in the user's browser
-* so... it seems like we just include this __babel library__ thing, and magically, JSX will work in our browser, right?
-
-<div markdown="block" class="img">
-![jsx](../../resources/img/jsx.png)
-</div>
-</section>
-
-<section markdown="block">
-## babel?
+## Babel
 
 [Babel](https://babeljs.io/) is a set of tools that allows you to use __new JavaScript__ syntax, now, __even if browsers don't support it yet__!!! YES. THE FUTURE IS NOW!
 
-* it transform new syntax from ES6/ES2015 so that you can write ES6 without having to wait for full browser support
-* ...and, of course, it'll compile JSX to plain JavaScript
+* it transforms new syntax from ES6/ES2015 to ES5... so that you can write ES6 without having to wait for full browser support
+* ...and, of course, __it'll compile JSX to plain JavaScript__
 </section>
 
 <section markdown="block">
-## Ok. Sign Me Up! Buuuuut....
+## How About In-Browser?
 
-Clicking on the link from the [facebook docs](https://facebook.github.io/react/docs/tooling-integration.html#in-browser-jsx-transform), takes us to this [page on babel's site](http://babeljs.io/docs/usage/browser/).
+__So when/where do we use a transformer, like babel?__ &rarr;
 
-<div markdown="block" class="img">
-![babel](../../resources/img/babel.png)
-</div>
+Things would be pretty easy if we could just use babel or some other transformer by including some client side JavaScript?
+{:.fragment}
 
-Looks like babel removed support for in-browser transforms. __Why?__ &rarr;
+* {:.fragment} our client side JavaScript will include a JSX transformer script / library
+* {:.fragment} which means that compilation of JSX into JavaScript will happen in the user's browser
+* {:.fragment} so... it seems like we just find this thing, and magically, JSX will work in our browser, right?
 
-* {:.fragment} there was note in the facebook docs that said "The in-browser JSX transformer is fairly large and results in extraneous computation client-side that can be avoided - do not use it in production"
-* {:.fragment} why transform on the client for every user (slowing down the user experience), when we can just transform once on the server by precompiling before deploy!?
 </section>
+
+<section markdown="block">
+## But Wait
+
+So... all signs point to the fact that compiling in browser is a bad idea, (sigh, yes, it is).
+
+* [facebook says so (don't use JSX-Transformer)](https://facebook.github.io/react/blog/2015/06/12/deprecating-jstransform-and-react-tools.html)
+* [the link that facebook says would replace their in-browser transformer is also deprecated](https://babeljs.io/docs/usage/browser/)
+
+<br>
+
+A tiny glimmer of hope...  [this project exists](https://github.com/Daniel15/babel-standalone)
+
+* however, there's probably a reason why everyone's avoid in-browser transform... __why__ &rarr;
+* {:.fragment} facebook docs say "(the JSX transformer) is fairly large and results in extraneous computation client-side that can be avoided - do not use it in production"
+* {:.fragment} we really only want to transform once (not once per client!)
+* {:.fragment} why transform on the client for every user (slowing down the user experience), when we can just transform once on the server by precompiling before deploy!?
+
+</section>
+
 
 <section markdown="block">
 ## Ohhh Kaaay. So Now What?
@@ -268,7 +275,7 @@ And... this will all be done without having to run separate commands. However, g
 
 __Webpack requires that you specify a single entry point to your application.__
 
-* typically, this is a single js file like _main.js_ or _client.js_
+* typically, this is a single js file like <code>main.js</code> or <code>client.js</code>
 * then, it'll figure out what that file depends on by <code>require</code> statements (or import statements for ES6 syntax!)... 
 * this will also work for assets like urls in CSS or hrefs in image tags!
 
@@ -331,18 +338,33 @@ react-dom
 <section markdown="block">
 ## Setting up our App for webpack
 
-We'll also have to modify where we place our code so that we can use webpack.
+__Let's modify where we place our code so that we can use webpack.__ &rarr;
 
 1. Move our code to external JavaScript 
-2. Perhaps separate out our component, and the initial mounting of the component
-3. Designate one of those files as the entry point...
-4. Add requires
+2. Perhaps separate out our __component__, and the __initial mounting of the component__
+3. Designate one of those files as the __entry point__ ...
+4. Add <code>require</code>s so that webpack knows what to put together
+
+<pre><code data-trim contenteditable>
+PROJECT_DIR 
+|
++-webpack.config.js // config options for webpack
+|
++-client.js // entry point into our client side code
+|
++-components
+  |
+  +-MyComponent.js // a single react component
+</code></pre>
 </section>
 
 <section markdown="block">
 ## Our Bare Bones Page
 
-So... let's get rid of that inline JavaScript... __and assume that we'll have a single js file available to us once webpack is done generating assets for us.__ &rarr;
+So... let's get rid of that inline JavaScript... 
+
+* __and assume that we'll have a single js file available to us once webpack is done generating assets for us.__ &rarr;
+* (<code>bundle.js</code>) __doesn't exist yet__!
 
 <pre><code data-trim contenteditable>
 &#x3C;div id=&#x22;app&#x22;&#x3E;
@@ -356,7 +378,7 @@ Of course, we'll have to remember to __tell webpack that our output should be <c
 <section markdown="block">
 ## Move the Component into a Separate File
 
-Create a directory that will contain all our components. Drop our <code>MyComponent</code> code there. Remember to export it... to make it available when using <code>require</code>.
+Create a directory in our project folder that will contain all of our components. Drop our <code>MyComponent</code> code there. Remember to export it... to make it available when using <code>require</code>.
 
 In <code>components/MyComponent.js</code>:
 
@@ -376,9 +398,11 @@ module.exports = MyComponent;
 <section markdown="block">
 ## Our Entry Point
 
-Let's mount the component that we created to our DOM.
+Our entry point will just be a file in the project directory called <code>client.js</code>. __Within it, we can mount the component that we created to our DOM.__ &rarr;
+
 * require the React libraries
 * require our component
+
 <pre><code data-trim contenteditable>
 var React = require(&#x27;react&#x27;);
 var ReactDOM = require(&#x27;react-dom&#x27;);
@@ -416,18 +440,34 @@ Specify where the resulting JavaScript file should go... (<code>javascripts/bund
 
 <pre><code data-trim contenteditable>
   output: {
-    path: path.join(__dirname, '/public'),
-    filename: 'javascripts/bundle.js',
-    publicPath: '/'
+    path: path.join(__dirname, '/public', 'javascripts'),
+    filename: 'bundle.js',
+    publicPath:'/javascripts'
   },
 </code></pre>
 
-Specify our loaders (the transformations we'll be using...)
+<br>
+
+* <code>path</code> - where on the file system we're writing to 
+* <code>filename</code> - name of resulting .js file
+* <code>publicPath</code> - the path where you're serving this file from (<code>http://localhost:3000/javascripts <-- /javascripts</code>)
+
+</section>
+
+<section markdown="block">
+## Webpack / Babel Configs
+
+__Specify our loaders (the transformations we'll be using...)__ &rarr;
+
+* this means... use babel for the transformation
+* and the default configuration will be react specific (for example, transpile JSX)
+
+<br>
 
 <pre><code data-trim contenteditable>
   module: {
     loaders: [ {
-      // we don't need to run babel on app and node_modules (and probably others!)
+      // no need to run babel on app and node_modules 
       exclude: /node_modules|app.js|routes/,
       loader: 'babel',
       query: { presets:['react'] }
@@ -435,10 +475,11 @@ Specify our loaders (the transformations we'll be using...)
   }
 </code></pre>
 </section>
+
 <section markdown="block">
 ## Whew. Finally
 
-In the root of your project folder, just run webpack... aaand hopefully we'll find a new jst file in <code>public/javascripts</code>
+In the root of your project folder, just run webpack... aaand hopefully we'll find a new <code>js</code> file in <code>public/javascripts</code>
 
 <pre><code data-trim contenteditable>
 webpack
@@ -478,27 +519,64 @@ Soooo... there are a lot of ways to automatically refresh the contents of <code>
 <section markdown="block">
 ## Webpack Dev Middleware
 
-We'll use webpack-dev-middleware to do this.
+We'll use <code>webpack-dev-middleware</code> to do this.
+
+* __webpack-dev-middleware__ is express middleware that serves the files created from webpack
+* however, instead of writing the files to disk, __it just stores the file in memory__
+* by default, it'll monitor the file system for changes, and if it does, it __automatically rebuilds the in-memory JavaScript bundle__
+
+<br>
+
+Install via npm...
 
 <pre><code data-trim contenteditable>
 npm install --save-dev webpack-dev-middleware
 </code></pre>
+</section>
 
-In <code>app.js</code> add the code below to activate the middleware. Notice that:
+<section markdown="block">
+## Integrating Webpack Dev
 
-* we read in our regular configuration file to configure our webpack-dev-middleware
-* we should probably use environment variables to switch this on and off... since this isn't recommended for production
+In <code>app.js</code> add the code below __before the express static middleware__. 
 
 <pre><code data-trim contenteditable>
-// should probably check environment variable to see if we're in DEV first...
+if(process.env.NODE_ENV === 'development') { 
+    // configure webpack-dev-middlware with our original webpack config
+    // then... "use" webpack-dev-middleware
 
-var webpackDevMiddleware = require("webpack-dev-middleware");
-var webpackConfig = require('./webpack.config.js')
-var webpack = require("webpack");
-var compiler = webpack(webpackConfig);
-app.use(webpackDevMiddleware(compiler, {
-}));
+    var webpackDevMiddleware = require("webpack-dev-middleware");
+    var webpackConfig = require('./webpack.config.js')
+    var webpack = require("webpack");
+    var compiler = webpack(webpackConfig);
+    app.use(webpackDevMiddleware(compiler, {
+        publicPath:'/javascripts'
+    }));
+}
 </code></pre>
+</section>
 
-We can even delete <code>bundle.js</code>, and we'll see that it all works out fine (since the in-memory version is being used)!
+<section markdown="block">
+## Webpack Dev Notes 
+
+__A few things about the webpack-dev-middleware integration...__ &rarr;
+
+* notice that we're essentially just reading our _plain ol'_ webpack configuration
+* <code>publicPath</code> is the path in the url 
+    * (so <code>localhost:3000/javascripts</code> <-- <code>/javascripts</code>)
+    * should match what's in <code>webpack.config.js</code>
+* you can see it rebuild the javascript bundle on your server's output
+* we can even delete <code>bundle.js</code>, and we'll see that it all works out fine (since the in-memory version is being used)!
+* as mentioned previously, __put this before the express static middleware__
+    * otherwise... you'll _have_ to delete <code>bundle.js</code>
+</section>
+
+<section markdown="block">
+## Dev Means Dev
+
+The example code is only active when there's an environment variable called <code>NODE_ENV</code> present and equal to <code>'development'</code>:
+
+* <code>if(<code>process.env.NODE_ENV === 'development') { ... }</code>)</code>
+* which means... only run the webpack dev middleware when we're in development, not production
+* in production we should build the javascript once only, and serve the _compiled_ files
+* sooo ... this means __to start with the middelware enabled__, we _must_ use <code>NODE_ENV=development nodemon bin/www</code>
 </section>

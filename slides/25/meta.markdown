@@ -1,6 +1,6 @@
 ---
 layout: slides
-title: "About Class #25"
+title: "About Class #26"
 ---
 
 <section markdown="block" class="intro-slide">
@@ -10,37 +10,21 @@ title: "About Class #25"
 
 <p><small></small></p>
 </section>
-
 <section markdown="block">
-## Today's Topics
+## Continuing Chat
 
-* finish out AJAX and Express today
-* maybe a quick overview of jQuery
+* so... we'll finish up the polling version of chat... or at least take a look at it
+* and... try to take a look at something neat!
 </section>
-
 <section markdown="block">
-## Last Few Classes...
+## Socket.IO
 
-So ... we're on the home stretch. __There are 4 classes left__!
+Some _real_ realtime. Let's see how we can use Socket.IO to create some actual realtime apps.
 
-Here's the plan. I'll try to get in these topics before the end of the semester, roughly in this order:
-
-* {:.fragment} finishing up AJAX and Express, a peek at jQuery
-* {:.fragment} A little bit more jQuery, a quick glimpse at Angular
-* {:.fragment} Finishing up angular, deploying on Heroku, maybe some deploy tools
-* {:.fragment} a review
 </section>
-
 <section markdown="block">
-## Reminders
+## Next Week
 
-* __Final Project__ 
-	* due in a week, Dec 8th 
-	* usual 24 hour grace period still applies
-* __Final Exam__ 
-	* in two weeks:
-	* Tuesday, December 16th
-	* 8:00AM - 9:50, WWH 317
-	* (don't worry, we'll do a review)
-	* (it'll be similar to the previous exam)
+* deploy should be quick (I'll use Heroku)
+* we'll make a demo angular app in class
 </section>

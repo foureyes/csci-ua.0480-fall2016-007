@@ -19,7 +19,7 @@ In all of our web applications so far (with the exception the client-side only a
 __We've always had to ask the server if there was new information or data.__ &rarr;
 
 * {:.fragment} the server couldn't push information to the browser without being asked first
-* {:.fragment} that's the way http works (it's a request / response protocol)
+* {:.fragment} that's the way http (well, 1.1) works (it's a request / response protocol)
 * {:.fragment} it's kind of [like this](http://i.stack.imgur.com/TK1ZG.png), right? (thanks for [the diagrams](http://stackoverflow.com/questions/11077857/what-are-long-polling-websockets-server-sent-events-sse-and-comet), Stack Overflow)
 </section>
 
@@ -195,31 +195,48 @@ On the client:
 <section markdown="block">
 ## (Some) Server Functions
 
-* __<code>io.on('event name', callback</code>__
-	* register a callback to handle a server event
-	* start off by defining what to do on the 'connect' event
-* __<code>io.sockets.emit('event name', 'message')</code>__
-	* send a message to all connected clients (including the one that is on the _current_ socket!)
-	* the message can be anything supported by JSON (strings, objects, etc. ... but not functions)
+The `Server` object represents socket.io server. Instantiate it by:
+
+<pre><code data-trim contenteditable>
+var io = require('socket.io')();
+</code></pre>
+
+Some methods that you can call on it are:
+
+* __<code>io.on('event name', callback)</code>__
+	* {:.fragment} register a callback to handle a server event
+    * {:.fragment} callback takes a socket as a param; socket is an object that allows interaction with a connected client
+	* {:.fragment} start off by defining what to do on the 'connect' event
+* __<code>io.emit('event name', 'message')</code>__ (or <code>io.sockets.emit('event name', 'message')</code>)
+	* {:.fragment}send a message to all connected clients (including the one that is on the _current_ socket!)
+	* {:.fragment} the message can be anything supported by JSON (strings, objects, etc. ... but not functions)
 </section>
 
 <section markdown="block">
 ## (More) Server Functions (and Properties)
 
+The callback passed to `on` for a connection event has a __socket__ as a parameter. This socket object can be used to interact with the connected client:
+
 * __<code>socket.on('event name', callback)</code>__
-	* define a call back to handle socket event
-	* usually custom event names (events that you create)
+	* {:.fragment} define a callback to handle socket event
+	* {:.fragment} usually custom event names (events that you create)
+* __<code>socket.emit('event name', 'message')</code>__ <span class="fragment"> - send a message to this connected client only</span>
 * __<code>socket.broadcast.emit('event name', 'message')</code>__
-	* send a message to all connected clients __except__ for yourself (the socket that sends the message)
-* __<code>socket.id</code>__ - a unique identifier for the socket session / connected client
+	* {:.fragment} send a message to all connected clients __except__ for yourself (the socket that sends the message)
+* __<code>socket.id</code>__ <span class="fragment"> - a unique identifier for the socket session / connected client</span>
 </section>
 
 <section markdown="block">
 ## (Some) Client Functions
 
-* <code>io</code> - a function that gives back a socket
-* <code>socket.on('event name', callback)</code> - listen for an event name, trigger the callback
-* <code>socket.emit('event name', 'message')</code> - send a message to the server
+* __<code>io</code>__ 
+    * {:.fragment} a function that gives back a socket object
+    * {:.fragment} socket can be used to interact with server
+    * {:.fragment} `var socket = io('http://localhost');`
+* __<code>socket.on('event name', callback)</code>__ 
+    * {:.fragment} listen for an event name, trigger the callback
+* __<code>socket.emit('event name', 'message')</code>__  
+    * {:.fragment} send a message to the server
 
 </section>
 <section markdown="block">
@@ -259,9 +276,27 @@ npm install --save socket.io
 <section markdown="block">
 ## Some Server-Side Set Up
 
-Socket.IO requires access to the underlying HTTP server object that backs express (you remember the __<code>http</code>__ module, right!?)
+Socket.IO requires access to the underlying HTTP server object that backs express (you remember the __<code>http</code>__ module, right!?).
 
-You'll have to:
+In its simplest form, you can _attach_ a socket.io Server to Express using this code:
+
+<pre><code data-trim contenteditable>
+var express = require('express');
+var app = express();
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+app.use(express.static('public'));
+
+
+server.listen(3000);
+</code></pre>
+
+
+</section>
+<section markdown="block">
+## Server Side Set Up with with Generator
+
+That was a little different than what we're used to doing. If you want to use express generator, a quick way to attach a socket.io server is to:
 
 * copy the contents of __<code>/bin/www</code>__
 * ... to __<code>app.js</code>__
@@ -666,87 +701,4 @@ socket.on('other mouse', function(data) {
 __Note that the top and left values are in pixels.__
 {:.fragment}
 
-</section>
-
-<section markdown="block">
-## Don't Want to Broadcast to Everyone?
-
-Socket.IO allows you to have rooms...
-
-* sockets can join and leave rooms
-* messages can be emitted to specific rooms
-</section>
-
-<section markdown="block">
-## Rooms Continued
-
-The server can add a client to a room by using <code>join</code>:
-
-<pre><code data-trim contenteditable>
-socket.join('some room');
-</code></pre>
-
-To send to that room:
-
-<pre><code data-trim contenteditable>
-socket.to('some room').emit('some event'):
-</code></pre>
-
-You can see all of the rooms that a socket is in by:
-
-<pre><code data-trim contenteditable>
-socket.rooms
-</code></pre>
-
-Note that: 
-
-* everyone starts off in a default room based on their socket id
-* you can also be in multiple rooms
-</section>
-
-<section markdown="block">
-# A Quick Demo Using Rooms
-
-</section>
-<section markdown="block">
-## How Did That Work on the Server?
-
-Join a room immediately upon connection (this can be a custom event sent from the client).
-
-<pre><code data-trim contenteditable>
-  // listen for a custom event from the client and join that room
-  socket.on('join', function(room) {
-    console.log('join', room);
-    // joining 
-    socket.join(room);
-  });
-
-</code></pre>
-</section>
-<section markdown="block">
-## Sending to Room Only
-
-In this case, we know that we're in two rooms (the default), so we'll use <code>io.to</code> to send to that particular room.
-
-<pre><code data-trim contenteditable>
-  socket.on('chat message', function(msg) {
-    console.log('got msg from', socket.id, ':', msg);
-    console.log('sending to room', socket.rooms[1]);
-    io.to('my very own room').emit('chat message', msg);
-  });
-</code></pre>
-</section>
-
-<section markdown="block">
-## On the Client
-
-We just have to make sure that we send the custom join event... with the room that we'd like to join.
-
-<pre><code data-trim contenteditable>
-	socket.on('connect', onConnect);
-	function onConnect() {
-		console.log('connected');
-		socket.emit('join', 'my very own room');
-	}
-</code></pre>
 </section>
