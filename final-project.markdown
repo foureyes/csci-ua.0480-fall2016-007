@@ -27,7 +27,7 @@ pre {
 	<div class="panel-heading">Final Project</div>
 	<div class="panel-body" markdown="block">
 
-# __Final Project, Due <strike>Saturday, Dec 3rd at 11pm</strike> Thursday, Dec 8th at 11pm __
+# __Final Project, Due__ <strike>Saturday, Dec 3rd at 11pm</strike> __Monday, Dec 12th at 11pm____
 
 ## Overview 
 
@@ -199,22 +199,16 @@ Choose at least __8 points__ worth of these following topics (research and imple
 <br>
 <br>
 
-### 12/2 - Milestone 3 - 2nd Form and More Progress on Research(10 points)
+### __12/12 11PM__ - Final Project Complete and Code is fully  _Deployed_ 
 
-1. make at least 3 additional commits to add:
-    * your 2nd form / ajax interaction
-    * make more progress on your research topics
-2. redeploy your code to i6 by running git pull and restarting forever
-    1. `ssh` into i6
-    2. `cd` into your project directory (should be in `~/opt/NETID-final-project`)
-    3. run `forever stopall` and `forever start bin/www` 
-        * __YOU MUST MAKE SURE THIS IS WORKING AFTER DECEMBER 1ST DUE TO SCHEDULED DOWNTIME FOR SERVERS__
-        * you'll have to use the full path to forever, likely `~/usr/local/node_modules/bin/forever`
-        * and perhaps the full bath to `bin/www`
-3. use [this form to submit urls for the following](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdZamAL1MURfHInQPWjLjcs0xB__QOyjiwl1J_YNROJD8c5gg/viewform)
-    * __both working forms or ajax interactions (that are not login or registration)__ 
-    * a link to show code changes since milestone #2:
-        * start with the url to your repository: `https://github.com/nyu-csci-ua-0480-007-fall-2016/NETID-final-project/`
-        * and append the following to the url: `compare/master@%7B11-18-16%7D...master`
-        * for example: `https://github.com/nyu-csci-ua-0480-007-fall-2016/NETID-final-project/compare/master@%7B11-18-16%7D...master`
+* __all commits must be in by Monday, December 12th__
+* any late commits will result in point deductions: 10% off of grade
+* __project must be deployed__ on i6 (or other platform, such as Heroku, gomix, zeit, etc.)
+    * if your application needs to be restarted while being graded; I will contact you
+    * you will not receive a penalty for restarting after the due date
+* __the [final project form submission](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSe0OP9NvaBPX1quV-bOU3_WmOTt-Yk-sAxkTLBrWm5VP_pyzw/viewform) must be filled out__ (if a form is not submitted, you will receive a 0 for your project)
+    * late project form submission will also result in a small point deduction
 
+</div>
+</div>
+</div> 
