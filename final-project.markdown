@@ -199,6 +199,34 @@ Choose at least __8 points__ worth of these following topics (research and imple
 <br>
 <br>
 
+### 12/2 - Milestone 3 - 2nd Form and More Progress on Research(10 points)
+
+1. make at least 3 additional commits to add:
+    * your 2nd form / ajax interaction
+    * make more progress on your research topics
+2. redeploy your code to i6 by running git pull and restarting forever
+    1. `ssh` into i6
+    2. `cd` into your project directory (should be in `~/opt/NETID-final-project`)
+    3. run `forever stopall` and `forever start bin/www` 
+        * __YOU MUST MAKE SURE THIS IS WORKING AFTER DECEMBER 1ST DUE TO SCHEDULED DOWNTIME FOR SERVERS__
+        * you'll have to use the full path to forever, likely `~/usr/local/node_modules/bin/forever`
+        * and perhaps the full bath to `bin/www`
+3. use [this form to submit urls for the following](https://docs.google.com/a/nyu.edu/forms/d/e/1FAIpQLSdZamAL1MURfHInQPWjLjcs0xB__QOyjiwl1J_YNROJD8c5gg/viewform)
+    * __both working forms or ajax interactions (that are not login or registration)__ 
+    * a link to show code changes since milestone #2:
+        * start with the url to your repository: `https://github.com/nyu-csci-ua-0480-001-fall-2016/NETID-final-project/`
+        * and append the following to the url: `compare/master@%7B11-18-16%7D...master`
+        * for example: `https://github.com/nyu-csci-ua-0480-001-fall-2016/NETID-final-project/compare/master@%7B11-18-16%7D...master`
+
+
+<a name="final_submit">
+
+<br>
+<br>
+<br>
+<br>
+
+
 ### __12/12 11PM__ - Final Project Complete and Code is fully  _Deployed_ 
 
 * __all commits must be in by Monday, December 12th__
