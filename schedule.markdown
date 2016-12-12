@@ -351,9 +351,7 @@ show react basics
 <td markdown="block">
 * ES6?
 </td>
-<td></td><td></td><td></td>{% comment %}
 {% include schedule/26.markdown %}
-{% endcomment %}
 </tr>
 
 
