@@ -4,6 +4,7 @@
 {% endcomment %}
 
 * Previous class on Promises
+* [Example Promise Code for XMLHttpRequest](https://github.com/nyu-csci-ua-0480-001-fall-2016/examples/blob/master/class23/ajax/public/javascripts/demo.js#L87)
 
 {% comment %}
 * (from forever ago) [CSS](slides/19/css.html)
